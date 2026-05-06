@@ -10,7 +10,7 @@ public class Main {
 
     static void main(String[] args) {
         TransactionIngestor transactionIngestor = new TransactionIngestor();
-        List<Transaction> transactions =  transactionIngestor.newRead("data/PS_20174392719_1491204439457_log.csv");
-        transactions.stream().limit(10).forEach(IO::println);
+        List<Transaction> transactions =  transactionIngestor.newRead("data/paysim_with_bad_data.csv");
+        transactions.stream().limit(100).forEach(IO::println);
     }
 }
